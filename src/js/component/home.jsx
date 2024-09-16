@@ -1,21 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const Home = () => {
   return (
-    <Navbar />
-   
+     <Navbar /> 
+    // <Jumbotron/>
+    // <Card/>
+    // <Card/>
+    // <Card/>
+    // <Card/>
+    // <Footer/>
   );
 };
 
 const styleNavbar = {
-  marginLeft : "1400px"
-}
+  marginLeft: "1400px",
+};
 
 const Navbar = () => {
   return (
@@ -64,43 +68,47 @@ const Navbar = () => {
   );
 };
 
-
 const Jumbotron = () => {
   return (
     <div className="p-5 mb-4 bg-body-tertiary rounded-3">
-      <div className="container-fluid py-5">
-        <h1 className="display-5 fw-bold">
-          
-        </h1>
+      <div className="container-fluid py-5 ">
+        <h1 className="display-5 fw-bold">A Warm Welcome!</h1>
+        <p className="col-md-8 fs-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          quibusdam libero praesentium, repudiandae labore quae iste repellendus
+          doloribus harum molestiae dolorum necessitatibus fuga, maxime
+          perferendis, voluptate alias nam cupiditate a?
+        </p>
+        <button className="btn btn-primary btn-lg">Call to Action!</button>
       </div>
     </div>
   );
-
-  
-}
+};
 
 const Card = () => {
   return (
-    <div className="card m-5">
-			<img className="card-img-top" src=""alt="Card image cap" />
-			<div className="card-body">
-				<h5 className="card-title"></h5>
-				<p className="card-text"></p>
-				<a href="#" className="btn btn-primary">
-					{props.buttonLabel}
-				</a>
-			</div>
-		</div>
-
-
+    <div class="card" style="width: 18rem;">
+       <img src="..." class="card-img-top" alt="..."></img>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, sint assumenda aspernatur pariatur omnis accusamus non unde numquam porro explicabo!</p>
+      </div>
+      <div className="card-body text-center">
+      <a href="#" class="btn btn-primary">Find Out More!</a>
+      </div>
+  </div>
   );
-}
+};
+
+const styleFooter = {
+  
+};
 
 const Footer = () => {
-  
-}
-
-
+  <div className="container bg-body-tertiary text-center">
+    Copyright © Sharguidev.com 2024
+  </div>
+};
 
 export default Home;
-ReactDOM.render(<Home />, document.querySelector("#app"));
+
