@@ -7,13 +7,16 @@ import rigoImage from "../../img/rigo-baby.jpg";
 //create your first component
 const Home = () => {
   return (
-     <Navbar /> 
-    // <Jumbotron/>
-    // <Card/>
-    // <Card/>
-    // <Card/>
-    // <Card/>
-    // <Footer/>
+    <>
+     <Navbar />
+     <Jumbotron/>
+     <Card/>
+     <Card/>
+     <Card/>
+     <Card/>
+     <Footer/>
+
+   </>
   );
 };
 
@@ -29,7 +32,7 @@ const Navbar = () => {
           Start Bootstrap
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -37,27 +40,27 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#">
                 Home
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 About
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Services
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Contact
               </a>
             </li>
@@ -87,22 +90,22 @@ const Jumbotron = () => {
 
 const Card = () => {
   return (
-    <div class="card" style="width: 18rem;">
-       <img src="..." class="card-img-top" alt="..."></img>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, sint assumenda aspernatur pariatur omnis accusamus non unde numquam porro explicabo!</p>
-      </div>
-      <div className="card-body text-center">
-      <a href="#" class="btn btn-primary">Find Out More!</a>
-      </div>
-  </div>
+    <div className="row align-items-md-strech d-flex">
+      <div className="card col-2" >
+        <img src="..." className="card-img-top" alt="..."></img>
+        <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, sint assumenda aspernatur pariatur omnis accusamus non unde numquam porro explicabo!</p>
+        </div>
+        <div className="card-body text-center">
+          <a href="#" className="btn btn-primary">Find Out More!</a>
+        </div>
+     </div>
+   </div>
   );
 };
 
-const styleFooter = {
-  
-};
+
 
 const Footer = () => {
   <div className="container bg-body-tertiary text-center">
