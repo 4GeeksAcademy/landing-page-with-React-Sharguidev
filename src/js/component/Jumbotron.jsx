@@ -12,7 +12,7 @@ export default function Jumbotron (){
       
       
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Call to action!</a>
       </p>
     </div>
   );
