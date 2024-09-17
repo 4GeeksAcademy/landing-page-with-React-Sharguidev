@@ -8,21 +8,26 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
   return (
     <>
-     <Navbar />
-     <Jumbotron/>
-     <Card/>
-     <Card/>
-     <Card/>
-     <Card/>
-     <Footer/>
-
-   </>
+      <Navbar />
+    <div >
+      <Jumbotron />
+      <div className="d-flex justify-content-center">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+      </div>
+    </div>
+      
+      
+      <div>
+        <Footer/>
+      </div>
+    </>
   );
 };
 
-const styleNavbar = {
-  marginLeft: "1400px",
-};
+
 
 const Navbar = () => {
   return (
@@ -88,30 +93,38 @@ const Jumbotron = () => {
   );
 };
 
+
+
 const Card = () => {
+
   return (
-    <div className="row align-items-md-strech d-flex">
-      <div className="card col-2" >
-        <img src="..." className="card-img-top" alt="..."></img>
-        <div className="card-body">
+   
+    <div className="container">
+        <div className="card d-flex align-items-center">
+          <img src="" className="card-img-top" alt="..."/>
+          <div className="card-body">
             <h5 className="card-title">Card title</h5>
-            <p className="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, sint assumenda aspernatur pariatur omnis accusamus non unde numquam porro explicabo!</p>
+            <p className="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+              sint assumenda aspernatur pariatur omnis accusamus non unde numquam
+              porro explicabo!
+            </p>
+          </div>
+          <div className="card-body text-center">
+            <a href="#" className="btn btn-primary">
+              Find Out More!
+            </a>
+          </div>
         </div>
-        <div className="card-body text-center">
-          <a href="#" className="btn btn-primary">Find Out More!</a>
-        </div>
-     </div>
-   </div>
+    </div> 
+    
   );
 };
-
-
 
 const Footer = () => {
   <div className="container bg-body-tertiary text-center">
     Copyright © Sharguidev.com 2024
-  </div>
+  </div>;
 };
 
 export default Home;
-
