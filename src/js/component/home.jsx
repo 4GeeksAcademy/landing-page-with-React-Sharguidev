@@ -1,7 +1,8 @@
 import React from "react";
 import Jumbotron from "./Jumbotron"
 import Navbar from "./Navbar"
-import Card from "./Cards";
+import Card from "./Cards"
+import Footer from "./Footer"
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -10,25 +11,33 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
   return (
     <>
-    <div className="text-white">
-      <Navbar />
-    </div>
-     
-    <div className="d-flex flex-column justify-content-center w-full" >
-      <Jumbotron />
-      <div className="d-flex  justify-content-center ">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-    </div>
-      
-    </div>
-    
-      
-      
-      <div>
-        <Footer/>
+      <div className="bg-body-tertiary">
+        <Navbar />
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg">
+            <Jumbotron />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg">
+            <Card />
+          </div>
+          <div className="col-lg">
+            <Card />
+          </div>
+          <div className="col-lg">
+            <Card />
+          </div>
+          <div className="col-lg">
+            <Card />
+          </div>
+        </div>
+      </div>
+
+      <div className="container-fluid p-0">
+        <Footer />
       </div>
     </>
   );
@@ -44,10 +53,6 @@ const Home = () => {
 
 
 
-const Footer = () => {
-  <div className="container bg-body-tertiary text-center">
-    Copyright © Sharguidev.com 2024
-  </div>;
-};
+
 
 export default Home;
